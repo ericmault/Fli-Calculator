@@ -12,6 +12,7 @@ function myFunction() {
     var initialInvestment = document.getElementById("initialInvestment");
 
     var currentLeverageRatio = document.getElementById("currentLeverageRatio");
+    // var fliFinalPrice = document.getElementById("");
     // var currentLeverageRatio = 1.8
 
         // var rs = document.getElementById(debugRecenterSpeed);
@@ -27,11 +28,14 @@ function myFunction() {
   
 
     // document.getElementById("fliEarned").innerHTML = (initialInvestment.value * (1+((ethPrice.value * (percentChange.value/months.value)/ethPrice.value-1)*1.8))).toFixed(2);
-    document.getElementById("fliEarned").innerHTML = (ethPrice.value * (1+(percentChange.value/100)*(currentLeverageRatio.value))).toFixed(2);
+    document.getElementById("fliEarned").innerHTML = (initialInvestment.value * (1+(percentChange.value/100)*(currentLeverageRatio.value))).toFixed(2);
     // document.getElementById("ethEarned").innerHTML = (ethPrice.value * (percentChange.value/months.value));
-    document.getElementById("ethEarned").innerHTML = ethPrice.value * (1+(percentChange.value/100)).toFixed(2);
+    document.getElementById("ethEarned").innerHTML = initialInvestment.value* (1+(percentChange.value/100)).toFixed(2);
     document.getElementById("newLeverageRatio").innerHTML = Math.max(minLR,Math.min(maxLR,targetLR*(1-recenteringSpeed) +currentLeverageRatio.value*recenteringSpeed)).toFixed(2);
     document.getElementById("debugCurrentLeverageRatioValue").innerHTML = currentLeverageRatio.value;
+    // document.getElementById("fliFinalPrice").innerHTML = fliFinalPrice.value;
+    document.getElementById("ethFinalPrice").innerHTML = ethPrice.value * (1+(percentChange.value/100));
+    // ethPrice.value* (1+(percentChange.value/100));
     
 }
 

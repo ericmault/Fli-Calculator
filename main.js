@@ -1,4 +1,4 @@
-var recenteringSpeed = 0.05;//5%
+var recenteringSpeed = 0.05;//5% need to change to non global
 
 
 function myFunction() {

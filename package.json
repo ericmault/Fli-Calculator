@@ -1,0 +1,53 @@
+{
+  "name": "fli-calculator",
+  "version": "1.0.0",
+  "description": "TO-Do",
+  "main": "main.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "lint": "eslint ./source",
+    "lint:fix": "eslint --fix ./source",
+    "test": "NODE_ENV=test node -r @babel/register -r @babel/polyfill source/index.test.js",
+    "watch": "watch 'clear && npm run -s test | tap-nirvana && npm run -s lint' source"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrecojs/Fli-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tgrecojs/Fli-Calculator/issues"
+  },
+  "homepage": "https://github.com/tgrecojs/Fli-Calculator#readme",
+  "dependencies": {
+    "autodux": "^5.0.3",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/register": "^7.13.8",
+    "@emotion/babel-plugin": "^11.2.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "riteway": "^6.2.1",
+    "tailwind.macro": "^0.5.10",
+    "tailwindcss": "^2.0.3",
+    "tap-nirvana": "^1.1.0",
+    "watch": "^1.0.2"
+  }
+}
